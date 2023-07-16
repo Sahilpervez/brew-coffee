@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class FrozenGlassContainer extends StatelessWidget {
-  const FrozenGlassContainer({super.key, this.height, this.width, this.child,this.borderRadius = 0, this.blurColor = Colors.transparent, this.blurX = 12, this.blurY = 12, this.gradColorTopLeft , this.gradColorTopRIght });
+  const FrozenGlassContainer({super.key, this.height, this.width, this.child,this.borderRadius = 0, this.blurColor = Colors.transparent, this.blurX = 12, this.blurY = 12, this.gradColorTopLeft , this.gradColorTopRIght, this.onlyRadius, this.isBorder = true});
 
   final double? height;
   final double? width;
@@ -14,10 +14,12 @@ class FrozenGlassContainer extends StatelessWidget {
   final double blurY;
   final Color? gradColorTopLeft;
   final Color? gradColorTopRIght;
+  final bool? onlyRadius;
+  final bool? isBorder;
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(borderRadius),
+                borderRadius: (onlyRadius != true)?BorderRadius.circular(borderRadius):BorderRadius.only(bottomLeft: Radius.circular(borderRadius),topLeft: Radius.circular(borderRadius),),
       child: Container(
         height: height,
         width: width,
@@ -33,10 +35,10 @@ class FrozenGlassContainer extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(borderRadius),
-                border: Border.all(
+                borderRadius: (onlyRadius != true)?BorderRadius.circular(borderRadius):BorderRadius.only(bottomLeft: Radius.circular(borderRadius),topLeft: Radius.circular(borderRadius),),
+                border: (isBorder == true)?Border.all(
                   color: Colors.white.withOpacity(0.13),
-                ),
+                ):null,
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
