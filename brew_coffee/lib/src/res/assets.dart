@@ -1,7 +1,7 @@
 
 class ImageAsset{
   static const loginBackground = "assets/images/LoginBackground.png";
-  static const loginBackground2 = "assets/images/Background_2.jpg";
+  static const loginBackground2 = "assets/images/mainBackground.jpg";
   static const loginAsset = "assets/images/loginAsset.svg";
   static const loginAssetImg = "assets/images/loginassetImg.png";
   static const homeScreenBackground = "assets/images/homeScreenBackground.jpg";
