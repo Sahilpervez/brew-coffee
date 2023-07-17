@@ -38,6 +38,7 @@ dependencies:
   flutter_riverpod:
   sizer: ^2.0.15
   flutter_svg:
+  intl:
 
 dev_dependencies:
   flutter_test:

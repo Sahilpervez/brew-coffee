@@ -1,3 +1,4 @@
+import 'package:brew_coffee/src/features/details/views/details.dart';
 import 'package:brew_coffee/src/features/login/views/login.dart';
 import 'package:brew_coffee/src/home/views/home.dart';
 import 'package:brew_coffee/src/res/assets.dart';
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    precacheImage(AssetImage("assets/images/homeScreenBackground.jpg"), context);
-    precacheImage(AssetImage("assets/images/LoginBackground.png"), context);
-    precacheImage(AssetImage("assets/images/Background_2.jpg"), context);
+    precacheImage(const AssetImage("assets/images/homeScreenBackground.jpg"), context);
+    precacheImage(const AssetImage("assets/images/LoginBackground.png"), context);
+    precacheImage(const AssetImage("assets/images/mainBackground.jpg"), context);
     return Sizer(
       builder: (context,orientation,deviceType) {
 
@@ -29,10 +30,10 @@ class MyApp extends StatelessWidget {
             useMaterial3: true,
           ),
           debugShowCheckedModeBanner: false,
-          // home: const LoginScreen(),
           routes: {
             "/" : (ctx) => LoginScreen(),
             HomeView.routePath : (ctx) => HomeView(),
+            DetailsPage.routePath : (ctx) => DetailsPage(),
           },
         );
       }
