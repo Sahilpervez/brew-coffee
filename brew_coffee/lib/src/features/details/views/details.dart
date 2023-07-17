@@ -1,13 +1,9 @@
 import 'dart:math';
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../commons/FrozenGlass.dart';
-import '../../../commons/bottom_nav_bar.dart';
 import '../../../res/assets.dart';
 
 class DetailsPage extends StatelessWidget {
@@ -133,8 +129,8 @@ class DetailsPage extends StatelessWidget {
                               child: Text(
                                 'Lattè',
                                 style: TextStyle(
-                                  color: const Color(0xFFCDCDCD),
-                                  fontSize: (size.width < 520) ? 11.sp : 15,
+                                  color: Colors.black,
+                                  fontSize: (size.width < 520) ? 30 : 20,
                                   fontFamily: 'Inter',
                                   fontWeight: FontWeight.w500,
                                 ),
