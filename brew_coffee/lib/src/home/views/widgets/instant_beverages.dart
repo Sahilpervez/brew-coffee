@@ -143,7 +143,7 @@ class InstantBeveragesItem extends StatelessWidget {
                           'Lattè',
                           style: TextStyle(
                             color: Color(0xFFCDCDCD),
-                            fontSize: (size.width<520)?11.sp:8.sp,
+                            fontSize: (size.width<520)?11.sp:15,
                             fontFamily: 'Inter',
                             fontWeight: FontWeight.w500,
                           ),
@@ -186,7 +186,7 @@ class InstantBeveragesItem extends StatelessWidget {
                           maxLines: 2,
                           style: TextStyle(
                             color: Color(0xFFC0C0C0),
-                            fontSize: (size.width<520)?9.sp:6.sp,
+                            fontSize: (size.width<520)?9.sp:12,
                             fontFamily: 'Inter',
                             fontWeight: FontWeight.w400,
                             letterSpacing: 0.20,
