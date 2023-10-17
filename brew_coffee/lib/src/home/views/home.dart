@@ -81,6 +81,9 @@ class HomeView extends StatelessWidget {
                       child: SingleChildScrollView(
                         child: Column(
                           children: [
+                            const SizedBox(
+                              height: 20,
+                            ),
                             Container(
                               padding: const EdgeInsets.all(20),
                               width: (size.width > 520)
