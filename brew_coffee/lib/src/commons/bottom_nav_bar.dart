@@ -18,7 +18,7 @@ class BottomNavBar extends ConsumerWidget {
 
   final BuildContext ctx;
 
-  List<Map<String, String>> navBarList = [
+  final List<Map<String, String>> navBarList = [
     {
       "icon": ImageAsset.kiNavBarIcon1,
       "routePath": HomeView.routePath,

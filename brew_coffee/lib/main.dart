@@ -1,7 +1,6 @@
 import 'package:brew_coffee/src/features/details/views/details.dart';
 import 'package:brew_coffee/src/features/login/views/login.dart';
 import 'package:brew_coffee/src/home/views/home.dart';
-import 'package:brew_coffee/src/res/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sizer/sizer.dart';
